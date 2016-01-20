@@ -31,7 +31,7 @@ mv $JRE_DIR jre
 
 status "Repack jenkins.war"
 cd $build_dir
-zip -q -r jenkins.war . -x "vendor/*"
+zip -r jenkins.war . -x "vendor/*"
 
 # Update the PATH
 status "Building runtime environment"
